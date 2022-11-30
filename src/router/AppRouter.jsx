@@ -1,14 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import { Navbar } from '../ui';
 import { LoginPage } from '../Auth';
+import { HeroRoutes } from '../Heroes';
 
 export const AppRouter = () => {
     return (
         <>
-            <Navbar/>
             <Routes>
                 <Route path='login' element={ <LoginPage /> } />
+                <Route path='/*' element={ <HeroRoutes /> } />
             </Routes>
         </>
     )

@@ -1,11 +1,20 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
 
     const getClassName = (isActive) => {
         let content = `nav-item nav-link ${isActive ? 'active' : ''}`
         return content.trim();
-    }
+    };
+
+    const navigate = useNavigate();
+
+    const onLogOut = () => {
+        console.log("Logout");
+        navigate('/login', {
+            replace: true
+        })
+    };
 
 
     return (
@@ -52,7 +61,10 @@ export const Navbar = () => {
                         Rodrigo
                     </span>
 
-                    <button className='nav-item nav-link btn'>
+                    <button 
+                        className='nav-item nav-link btn'
+                        onClick={onLogOut}
+                    >
                         Logout
                     </button>
 

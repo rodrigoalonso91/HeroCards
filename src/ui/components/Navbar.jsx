@@ -9,12 +9,13 @@ export const Navbar = () => {
         return content.trim();
     };
 
-    const { user } = useContext( AuthContext );
+    const { user, logout} = useContext( AuthContext );
 
     const navigate = useNavigate();
 
     const onLogOut = () => {
         
+        logout();
         navigate('/login', {
             replace: true
         })

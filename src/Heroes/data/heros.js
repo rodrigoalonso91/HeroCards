@@ -21,7 +21,7 @@ export const heros = [
         'publisher':'DC Comics', 
         'alter_ego':'Jay Garrick',
         'first_appearance':'Flash Comics #1',
-        'characters':'Jay Garrick, Barry Allen, Wally West, Bart Allen'
+        'characters':'Jay Garrick, Wally West, Bart & Barry Allen'
     },
     {
         'id': 'dc-green',
@@ -29,7 +29,7 @@ export const heros = [
         'publisher':'DC Comics', 
         'alter_ego':'Alan Scott',
         'first_appearance':'All-American Comics #16',
-        'characters':'Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz'
+        'characters':'Alan Scott, Hal Jordan, Guy Gardner, John Stewart'
     },
     {
         'id': 'dc-arrow',

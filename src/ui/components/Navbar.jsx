@@ -18,13 +18,13 @@ export const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 mb-3">
             
             <Link 
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                Hero-App
             </Link>
 
             <div className="navbar-collapse">

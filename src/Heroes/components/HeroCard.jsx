@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance, characters}) => {
@@ -14,10 +15,10 @@ export const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance,
 
     return (
         <div className="col">
-            <div className="card ">
+            <div className="card animate__animated animate__fadeIn">
                 <div className="row no-gutters">
 
-                    <div className="col-4">
+                    <div className="col-4 ">
                         <img className="card-img" src={heroImgPath} alt={superhero}/>
                     </div>
 
@@ -33,6 +34,8 @@ export const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance,
                                 <small className="text-muted">{first_appearance}</small>
                             </p>
                             
+                            <Link to={`/hero/${id}`} >Más info</Link>
+
                         </div>
                     </div>
 

@@ -29,7 +29,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Hero-App
+                HeroCards
             </Link>
 
             <div className="navbar-collapse">
